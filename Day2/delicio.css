@@ -1,0 +1,60 @@
+body {
+	text-align: center;
+	background-color: #330033;
+}
+.Image img {
+width: 100%;
+}
+.squareofpics  img {
+	max-height: 30px;
+}
+.Delicio-logo{
+	display: inline-block;
+}
+.Sidebar {
+	margin-left: 700px;
+
+}
+.Header {background-color: white;
+padding: 30px;}
+.BottomTable {width: 90%;
+margin-left: 150px;
+color: white;}
+.socialmediapic img {
+	height: 80px;
+	width: 23%
+}
+.Delicio-logo {float:left; font-family: Brush Script MT;}
+.clearfix {clear: both;}
+
+.Home{
+	display: inline-block;
+	margin-right: 10px;
+	margin-left: 20px;
+}
+.AboutUs{
+	display: inline-block;
+	margin-right: 10px;
+	margin-left: 20px;
+} 
+.Reservations{
+	display: inline-block;
+	margin-right: 10px;
+	margin-left: 20px;
+}
+.Shop {display: inline-block;
+margin-right: 10px;
+	margin-left: 20px;}
+.News{
+	display: inline-block;
+	margin-right: 10px;
+	margin-left: 20px;
+}
+.Contact {display: inline-block;
+margin-right: 2px;
+	margin-left: 10px;}
+.Cart-Image{
+	display: inline-block;
+	margin-right: 10px;
+	margin-left: 10px;
+}

@@ -1,0 +1,16 @@
+body {
+	background-color: pink;
+	padding: 0,
+	margin:0 ;
+}
+
+.wrapper {
+
+
+}
+.top-content {
+	border:1pt solid black;
+}
+.bottom-content {
+	border: 1pt solid black;
+}
