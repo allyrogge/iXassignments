@@ -1,0 +1,15 @@
+p {
+	font-family: Verdana, sans-serif;
+	font-size: 22px;
+	width: 280px;
+	display: inline;
+	word-spacing: 80px}
+	/*Add your CSS here!*/
+	
+}
+
+h2 {font-size: 22px;
+	margin-right: 250px;
+	margin-left: 250px;
+	text-align: center;
+	}

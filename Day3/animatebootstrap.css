@@ -1,0 +1,39 @@
+    body {
+  padding: 0;
+  margin:0;
+  text-align: center;
+  font-family: Helvetica;
+}
+.just-add {margin-bottom: 0; width: 100%
+padding:0;} /*HELP IDK HOW TO MAKE THE DROP DOWN MENU MOVE UP*/
+
+.container {
+width: 600px;s
+margin: auto;
+}
+
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+.row.content {height:auto;} 
+    }
+.animate {
+  margin-top: 10%;
+    font-size: 72px;
+  color: DarkCyan;
+  margin-bottom: 20px;
+}
+
+    .just-add {margin-top:3%;
+    font-size:20px;
+  color: grey;
+  margin-bottom: 20px;}
+
+  .dropdown-menu {
+    display: inline-block;
+  }
+  .button {
+    display: inline-block;
+  }
