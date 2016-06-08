@@ -5,7 +5,7 @@
   font-family: Helvetica;
 }
 .just-add {margin-bottom: 0; width: 100%
-padding:0;} /*HELP IDK HOW TO MAKE THE DROP DOWN MENU MOVE UP*/
+padding:0;} 
 
 .container {
 width: 600px;s
@@ -15,7 +15,7 @@ margin: auto;
     @media screen and (max-width: 767px) {
       .sidenav {
         height: auto;
-        padding: 15px;
+        padding: 5px;
       }
 .row.content {height:auto;} 
     }
@@ -23,17 +23,46 @@ margin: auto;
   margin-top: 10%;
     font-size: 72px;
   color: DarkCyan;
-  margin-bottom: 20px;
+ 
 }
 
     .just-add {margin-top:3%;
     font-size:20px;
   color: grey;
-  margin-bottom: 20px;}
+}
 
   .dropdown-menu {
     display: inline-block;
+    margin-top: 5px;
   }
   .button {
     display: inline-block;
+    margin-top: 5px;
   }
+
+.dropdown {
+    position: relative;
+   
+}
+.dropdownabc {margin-top: 20px;
+
+position: relative;}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    left: 10px; 
+    top: 5px;
+}
+/*.buttonabc {margin-left: 400px;}*/
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+

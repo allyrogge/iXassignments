@@ -44,7 +44,7 @@ $(".trio").click(function (e) {
   $(".clicked-id").html("you clicked on id:" + $(this).attr("id"));
 
 });
-    //hint: look at the currentTarget property
+ 
   });
 
 
