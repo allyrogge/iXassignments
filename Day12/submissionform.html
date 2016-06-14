@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Form</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <link rel="stylesheet" href="./submissionform-style.css">
+    <script src="./angular.min.js"></script>
+    <script src="./submissionform.js"></script>
+    <script src="./anotherscript.js"></script>
+</head>
+<body ng-app="FormApp" ng-controller="FormCtrl">
+    <div class="container">
+     <div>{{error}}</div>      
+              <h1>Stuff Angular Form</h1>
+               <button ng-click="checkInputs()">Submit</button>
+                <div class="row">
+               
+                <input type="text" class="form-control" ng-model="phone">
+                </div>
+                <!-- <p> you typed: {{inputText}}</p> -->
+                <div class="row">
+                <input type="text" class="form-control" ng-model="email">
+                </div>
+                <div class="row">
+                <input type="password" class="form-control" ng-model="password">
+                </div>
+                <div class="row">
+                <input type="password" class="form-control" ng-model="reenterpassword">
+                </div>
+            <!-- <button ng-click="checkInputs()">Submit</button> -->
+            <!--   </form> -->
+             <!--  <ol> -->
+             <!--   <li ng-repeat="item in items track by $index">{{item}}</li>
+              </ol> -->
+            <!-- </div>
+          </div>-->
+     </div> 
+</body>
+</html> 

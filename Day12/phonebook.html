@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TodoApp</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<!-- <script src="./script.js"></script> -->
+	<script src="./anotherscript.js"></script>
+</head>  
+<body ng-app="Phonebook" ng-controller="MainCtrl">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="wrapper">
+          <h1>My Contact List</h1>
+          <form ng-submit="addItem()">
+            <input type="text" class="form-control" ng-model="name">
+            <input type="text" class="form-control" ng-model="phone">
+           </form>
+            <button ng-click="addItem()">Submit</button> 
+          <ol>
+            <li ng-repeat="item in items">{{item}}</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
