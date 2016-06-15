@@ -2,9 +2,9 @@
 var app = angular.module("FormApp", []);
 
 app.controller("FormCtrl", function($scope){
-    $scope.phone = " ";
-    $scope.email = " ";
-    $scope.password= " ";
+    $scope.phone = "";
+    $scope.email = "";
+    $scope.password= "";
 
     var checkPhone = function() {
         if($scope.phone[3] != "-" || $scope.phone[7]!= "-") {
@@ -14,18 +14,21 @@ app.controller("FormCtrl", function($scope){
     }
     var checkEmail = function () {
         if ($scope.email.length != 11) {
+            
             return false
         }
-        if ($scope.email[4]!= "@") {
+        if ($scope.email[3]!= "@" ) {
+            console.log("second");
             return false
         }
-        if ($scope.email[7] != ".") {
+        if ($scope.email[7] != "." ) {
+            console.log("third");
             return false
         }
         return true  
     }
     var checkPassword = function() {
-        if($scope.password.length <= 6) {
+        if($scope.password.length < 6) {
             return false
         } 
         return true
@@ -37,7 +40,7 @@ app.controller("FormCtrl", function($scope){
         return true
     }
     $scope.checkInputs= function(){
-        $scope.error= " ";
+        $scope.error= "";
         if (!checkPhone()) {
             $scope.error+=("You've entered an invalid phone number")
         }
@@ -51,11 +54,11 @@ app.controller("FormCtrl", function($scope){
             $scope.error+=("Make sure your passwords match")
         }
         console.log("this is correct")
-            $scope.phone = " ";
-            $scope.email = " ";
-            $scope.password= " ";
+            $scope.phone = "";
+            $scope.email = "";
+            $scope.password= "";
             // $scope.error= " ";
-            $scope.reenterpassword= " ";
+            $scope.reenterpassword= "";
     
 }
 

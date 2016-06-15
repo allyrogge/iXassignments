@@ -12,22 +12,23 @@
 <body ng-app="FormApp" ng-controller="FormCtrl">
     <div class="container">
      <div>{{error}}</div>      
-              <h1>Stuff Angular Form</h1>
-               <button ng-click="checkInputs()">Submit</button>
+              <h1>Input Your Info Form</h1>
+               
                 <div class="row">
                
-                <input type="text" class="form-control" ng-model="phone">
+                <input type="text" class="form-control" ng-model="phone">phone
                 </div>
                 <!-- <p> you typed: {{inputText}}</p> -->
                 <div class="row">
-                <input type="text" class="form-control" ng-model="email">
+                <input type="text" class="form-control" ng-model="email">email
                 </div>
                 <div class="row">
-                <input type="password" class="form-control" ng-model="password">
+                <input type="password" class="form-control" ng-model="password">password
                 </div>
                 <div class="row">
-                <input type="password" class="form-control" ng-model="reenterpassword">
+                <input type="password" class="form-control" ng-model="reenterpassword">re-enter password
                 </div>
+                <button ng-click="checkInputs()">Submit</button>
             <!-- <button ng-click="checkInputs()">Submit</button> -->
             <!--   </form> -->
              <!--  <ol> -->
