@@ -15,37 +15,37 @@ app.controller("MainCtrl", function($scope) {
  }
 
 
- if (!$scope.name || $scope.name === "") {
-           $scope.Validations.name = "Invalid Name ";
-           $scope.submitForm = false;
-       }
+//  if (!$scope.name || $scope.name === "") {
+//            $scope.Validations.name = "Invalid Name ";
+//            $scope.submitForm = false;
+//        }
 
-$scope.isValidPhone = function (number) {
-   if (number) {
-   $scope.phoneTest = number.split("-");
-       if ($scope.phoneTest.length !== 3){
-           return false;
-       }
-       else if(($scope.phoneTest[0].length !==3) || ($scope.phoneTest[0] == NaN)) {
-           return false;
-       }
-       else if(($scope.phoneTest[1].length !==3) || ($scope.phoneTest[1] == NaN)) {
-           return false;
-       }
-       else if(($scope.phoneTest[2].length !==4) || ($scope.phoneTest[2] == NaN)) {
-           return false;
-       }
-       else {
-           return true;
-       }
-   }               
-}
+// $scope.isValidPhone = function (number) {
+//    if (number) {
+//    $scope.phoneTest = number.split("-");
+//        if ($scope.phoneTest.length !== 3){
+//            return false;
+//        }
+//        else if(($scope.phoneTest[0].length !==3) || ($scope.phoneTest[0] == NaN)) {
+//            return false;
+//        }
+//        else if(($scope.phoneTest[1].length !==3) || ($scope.phoneTest[1] == NaN)) {
+//            return false;
+//        }
+//        else if(($scope.phoneTest[2].length !==4) || ($scope.phoneTest[2] == NaN)) {
+//            return false;
+//        }
+//        else {
+//            return true;
+//        }
+//    }               
+// }
 
-if ($scope.number === false || !$scope.isValidPhone($scope.number)) {
-           $scope.Validations.number = "Invalid Phone Number ";
-           $scope.submitForm = false;
-           console.log($scope.name);
-           console.log($scope.number);
-       }  
+// if ($scope.number === false || !$scope.isValidPhone($scope.number)) {
+//            $scope.Validations.number = "Invalid Phone Number ";
+//            $scope.submitForm = false;
+//            console.log($scope.name);
+//            console.log($scope.number);
+//        }  
 
 });

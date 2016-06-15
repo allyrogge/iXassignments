@@ -17,7 +17,7 @@
      <div class="col-md-6 col-md-offset-3">
        <div class="wrapper">
          <h1>My Contacts</h1>
-         <div ng-model="Validations">{{Validations.name + " " + Validations.number}}</div>
+         <div ng-model="Validations">{{Validations.name + Validations.number}}</div>
          <form ng-submit="addContact()">
              Name:
            <input type="text" class="form-control" ng-model="name">

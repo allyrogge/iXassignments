@@ -15,12 +15,17 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <div class="wrapper">
+        <div>{{error}}</div>
           <h1>My Contact List</h1>
           <form ng-submit="addItem()">
-            <input type="text" class="form-control" ng-model="name">
-            <input type="text" class="form-control" ng-model="phone">
+            <input type="text" class="form-control" ng-model="name">name
+            <input type="text" class="form-control" ng-model="phone">phone
            </form>
-            <button ng-click="addItem()">Submit</button> 
+            <button ng-click="submit()">Submit</button> 
+            <form>
+            <input ng-model="global.search" type="text" class="form-control">search
+            <p ng-repeat="item in items | filter: global.search">{{item.items}}</p>
+    		</form>
           <ol>
             <li ng-repeat="item in items">{{item}}</li>
           </ol>
