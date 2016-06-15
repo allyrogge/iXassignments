@@ -60,23 +60,3 @@ app.controller("MainCtrl", function($scope) {
 
 }
 });
-	// console.log("this is correct")
- //            $scope.phone = " ";
- //            $scope.name=" ";
- //            // $scope.error= " ";
-
-
-
-
-//var app = angular.module("Phonebook", []); // Do not forget the empty array.
-
-// app.controller("MainCtrl", function($scope) {
-//   $scope.newPerson = "";
-//   $scope.newPeople = [];
-
-//   $scope.addItem = function() {
-//     $scope.newPeople.push($scope.newPerson);
-//     console.log($scope.newPeople);
-//     $scope.newPerson = "";
-//   }
-// });
